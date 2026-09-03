@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useAuthStore } from "../store/AuthStore";
 
 import blazerLogo from "../assets/images/blazer_logo.png";

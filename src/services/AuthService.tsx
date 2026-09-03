@@ -100,7 +100,7 @@ class AuthService {
     }
   }
 
-  async verifyToken(token: string): Promise<ApiResponse<User>> {
+  async verifyToken(_token: string): Promise<ApiResponse<User>> {
     try {
       const {
         data: { session },

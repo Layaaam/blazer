@@ -220,9 +220,8 @@
 
 import blazer2025 from "../assets/images/blazer-2025.jpg";
 import blazerLogo from "../assets/images/blazer_logo_white.png";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useAnnouncementStore } from "../store/AnnouncementStore";
-import type { Announcement } from "../types";
 
 function AnnouncementsSection() {
   const [expandedCard, setExpandedCard] = useState<string | null>(null);

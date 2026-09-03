@@ -1,4 +1,3 @@
-import React from "react";
 
 import cmuOnly from "../assets/images/cmu-2.jpeg";
 import LogoOnly from "../assets/images/logo_only.png";

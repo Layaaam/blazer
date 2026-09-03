@@ -5,7 +5,7 @@ import AnnouncementFormModal from "./AnnouncementFormModal";
 import type { Announcement } from "../../types";
 
 const AnnouncementManager: React.FC = () => {
-  const { user, token } = useAuthStore();
+  const { token } = useAuthStore();
   const {
     announcements,
     isLoading,

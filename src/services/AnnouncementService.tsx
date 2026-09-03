@@ -91,7 +91,7 @@ class AnnouncementService {
 
   async createAnnouncement(
     announcementData: Omit<Announcement, "id" | "created_at">,
-    token: string
+    _token: string
   ): Promise<ApiResponse<Announcement>> {
     try {
       const {
@@ -170,7 +170,7 @@ class AnnouncementService {
   async updateAnnouncement(
     id: string,
     announcementData: Partial<Omit<Announcement, "id" | "created_at">>,
-    token: string
+    _token: string
   ): Promise<ApiResponse<Announcement>> {
     try {
       const {
@@ -254,7 +254,7 @@ class AnnouncementService {
   }
   async deleteAnnouncement(
     id: string,
-    token: string
+    _token: string
   ): Promise<ApiResponse<null>> {
     try {
       const {
@@ -312,7 +312,7 @@ class AnnouncementService {
   async getAnnouncementsPaginated(
     page: number = 1,
     limit: number = 10,
-    token: string
+    _token: string
   ): Promise<
     ApiResponse<{
       announcements: Announcement[];
@@ -499,7 +499,7 @@ class AnnouncementService {
           schema: "public",
           table: "announcements",
         },
-        (payload) => {
+        (_payload) => {
           this.getAnnouncements().then((response) => {
             if (response.success && response.data) {
               callback(response.data);

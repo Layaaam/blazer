@@ -18,15 +18,6 @@ const DashboardOverview: React.FC = () => {
     return announcementDate >= oneWeekAgo;
   }).length;
 
-  const thisMonthAnnouncements = announcements.filter((a) => {
-    const announcementDate = new Date(a.created_at);
-    const now = new Date();
-    return (
-      announcementDate.getMonth() === now.getMonth() &&
-      announcementDate.getFullYear() === now.getFullYear()
-    );
-  }).length;
-
   const stats = [
     {
       name: "Total Announcements",

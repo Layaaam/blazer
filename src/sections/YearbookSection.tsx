@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 //TODO replace actualy previous years
 const yearbook2022 = "/api/placeholder/200/280";
