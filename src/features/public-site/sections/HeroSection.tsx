@@ -1,6 +1,6 @@
 
-import cmuOnly from "../assets/images/cmu-2.jpeg";
-import LogoOnly from "../assets/images/logo_only.png";
+import cmuOnly from "../../../assets/images/cmu-2.jpeg";
+import LogoOnly from "../../../assets/images/logo_only.png";
 
 function HeroSection() {
   const scrollToSection = (sectionId: string) => {

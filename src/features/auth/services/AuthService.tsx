@@ -1,5 +1,5 @@
-import { supabase } from "../lib/supabase";
-import type { User, LoginCredentials, ApiResponse } from "../types";
+import { supabase } from "../../../lib/supabase";
+import type { User, LoginCredentials, ApiResponse } from "../../../types";
 
 class AuthService {
   async login(

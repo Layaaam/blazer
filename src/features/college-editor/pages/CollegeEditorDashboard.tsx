@@ -1,10 +1,10 @@
 import React from "react";
 import { Routes, Route, Navigate, Link } from "react-router-dom";
-import { useAuthStore } from "../store/AuthStore";
-import blazerLogo from "../assets/images/logo_only.png";
+import { useAuthStore } from "../../auth/store/AuthStore";
+import blazerLogo from "../../../assets/images/logo_only.png";
 
-import EditorOverview from "../components/college_editor/EditorOverview";
-import ContactQueries from "../components/college_editor/ContactQueries";
+import EditorOverview from "../components/EditorOverview";
+import ContactQueries from "../components/ContactQueries";
 
 const EditorDashboard: React.FC = () => {
   const { user, logout } = useAuthStore();

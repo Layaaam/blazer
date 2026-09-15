@@ -1,7 +1,7 @@
 // src/components/editor/EditorOverview.tsx
 import React from "react";
 import { Link } from "react-router-dom";
-import { useAuthStore } from "../../store/AuthStore";
+import { useAuthStore } from "../../auth/store/AuthStore";
 
 const EditorOverview: React.FC = () => {
   const { user } = useAuthStore();

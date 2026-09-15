@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { useAnnouncementStore } from "../../store/AnnouncementStore";
+import { useAnnouncementStore } from "../../announcements/store/AnnouncementStore";
 
 const DashboardOverview: React.FC = () => {
   const { announcements, fetchAnnouncements, isLoading } =
