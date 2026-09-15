@@ -1,12 +1,12 @@
 import React from "react";
 import { Routes, Route, Navigate, Link, useLocation } from "react-router-dom";
-import { useAuthStore } from "../store/AuthStore";
-import blazerLogo from "../assets/images/logo_only.png";
+import { useAuthStore } from "../../auth/store/AuthStore";
+import blazerLogo from "../../../assets/images/logo_only.png";
 
-import DashboardOverview from "../components/admin/DashboardOverview";
-import AnnouncementManager from "../components/admin/AnnouncementManager";
-import EmailTracker from "../components/admin/EmailTracker";
-import UserManager from "../components/admin/UserManager";
+import DashboardOverview from "../components/DashboardOverview";
+import AnnouncementManager from "../../announcements/components/AnnouncementManager";
+import EmailTracker from "../components/EmailTracker";
+import UserManager from "../components/UserManager";
 
 const AdminDashboard: React.FC = () => {
   const { user, logout } = useAuthStore();

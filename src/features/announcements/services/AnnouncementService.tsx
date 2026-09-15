@@ -1,5 +1,5 @@
-import { supabase } from "../lib/supabase";
-import type { Announcement, ApiResponse } from "../types";
+import { supabase } from "../../../lib/supabase";
+import type { Announcement, ApiResponse } from "../../../types";
 
 class AnnouncementService {
   async getAnnouncements(): Promise<ApiResponse<Announcement[]>> {

@@ -1,5 +1,5 @@
-// import blazer2025 from "../assets/images/blazer-2025.jpg";
-// import blazerLogo from "../assets/images/blazer_logo_white.png";
+// import blazer2025 from "../../../assets/images/blazer-2025.jpg";
+// import blazerLogo from "../../../assets/images/blazer_logo_white.png";
 // import React, { useState } from "react";
 
 // // TypeScript interfaces
@@ -218,8 +218,8 @@
 
 // export default AnnouncementsSection;
 
-import blazer2025 from "../assets/images/blazer-2025.jpg";
-import blazerLogo from "../assets/images/blazer_logo_white.png";
+import blazer2025 from "../../../assets/images/blazer-2025.jpg";
+import blazerLogo from "../../../assets/images/blazer_logo_white.png";
 import { useState, useEffect } from "react";
 import { useAnnouncementStore } from "../store/AnnouncementStore";
 

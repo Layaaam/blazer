@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { useAnnouncementStore } from "../../store/AnnouncementStore";
-import { useAuthStore } from "../../store/AuthStore";
-import type { Announcement } from "../../types";
+import { useAnnouncementStore } from "../store/AnnouncementStore";
+import { useAuthStore } from "../../auth/store/AuthStore";
+import type { Announcement } from "../../../types";
 
 interface AnnouncementFormData {
   title: string;

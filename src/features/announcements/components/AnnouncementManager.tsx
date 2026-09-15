@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { useAnnouncementStore } from "../../store/AnnouncementStore";
-import { useAuthStore } from "../../store/AuthStore";
+import { useAnnouncementStore } from "../store/AnnouncementStore";
+import { useAuthStore } from "../../auth/store/AuthStore";
 import AnnouncementFormModal from "./AnnouncementFormModal";
-import type { Announcement } from "../../types";
+import type { Announcement } from "../../../types";
 
 const AnnouncementManager: React.FC = () => {
   const { token } = useAuthStore();

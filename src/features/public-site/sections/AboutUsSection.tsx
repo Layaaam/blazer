@@ -1,7 +1,7 @@
-import LogoOnly from "../assets/images/logo_only.png";
-import arrivalYearbook from "../assets/images/arrival-yearbook.jpg";
-import presentationYearbook from "../assets/images/presentation-yearbook.jpg";
-import blazerLogo from "../assets/images/logo_only.png";
+import LogoOnly from "../../../assets/images/logo_only.png";
+import arrivalYearbook from "../../../assets/images/arrival-yearbook.jpg";
+import presentationYearbook from "../../../assets/images/presentation-yearbook.jpg";
+import blazerLogo from "../../../assets/images/logo_only.png";
 
 interface TeamImage {
   id: number;

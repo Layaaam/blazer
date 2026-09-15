@@ -1,7 +1,7 @@
 // store/AuthStore.ts - DEBUG VERSION
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import type { User, LoginCredentials } from "../types";
+import type { User, LoginCredentials } from "../../../types";
 import { authService } from "../services/AuthService";
 
 interface AuthState {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useAuthStore } from "../store/AuthStore";
-import blazerLogo from "../assets/images/blazer_logo.png";
+import blazerLogo from "../../../assets/images/blazer_logo.png";
 
 interface FormData {
   email: string;

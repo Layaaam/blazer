@@ -1,4 +1,4 @@
-import { useAuthStore } from "../../store/AuthStore";
+import { useAuthStore } from "../../auth/store/AuthStore";
 
 const ContactQueries: React.FC = () => {
   const { user } = useAuthStore();

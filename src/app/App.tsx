@@ -1,15 +1,15 @@
 // import { useState } from "react";
 
 // // section imports
-// import HeroSection from "./sections/HeroSection";
-// import AnnouncementsSection from "./sections/AnnoucementsSection";
-// import AboutUsSection from "./sections/AboutUsSection";
-// import ContactSection from "./sections/ContactSection";
+// import HeroSection from "../features/public-site/sections/HeroSection";
+// import AnnouncementsSection from "../features/announcements/sections/AnnouncementsSection";
+// import AboutUsSection from "../features/public-site/sections/AboutUsSection";
+// import ContactSection from "../features/public-site/sections/ContactSection";
 
 // // component imports
-// import Header from "./components/Header";
-// import Footer from "./components/Footer";
-// import YearbookSection from "./sections/YearbookSection";
+// import Header from "../components/Header";
+// import Footer from "../components/Footer";
+// import YearbookSection from "../features/public-site/sections/YearbookSection";
 
 // function ServicesSection() {
 //   return null;
@@ -40,20 +40,20 @@ import {
 } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-import LoginPage from "./pages/LoginPage";
-import AdminDashboard from "./pages/AdminDashboard";
-import EditorDashboard from "./pages/CollegeEditorDashboard";
-import ProtectedRoute from "./components/ProtectedRoutes";
+import LoginPage from "../features/auth/pages/LoginPage";
+import AdminDashboard from "../features/admin/pages/AdminDashboard";
+import EditorDashboard from "../features/college-editor/pages/CollegeEditorDashboard";
+import ProtectedRoute from "../components/ProtectedRoutes";
 
-import HeroSection from "./sections/HeroSection";
-import AnnouncementsSection from "./sections/AnnoucementsSection";
-import AboutUsSection from "./sections/AboutUsSection";
-import ContactSection from "./sections/ContactSection";
-import YearbookSection from "./sections/YearbookSection";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import HeroSection from "../features/public-site/sections/HeroSection";
+import AnnouncementsSection from "../features/announcements/sections/AnnouncementsSection";
+import AboutUsSection from "../features/public-site/sections/AboutUsSection";
+import ContactSection from "../features/public-site/sections/ContactSection";
+import YearbookSection from "../features/public-site/sections/YearbookSection";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
-import { useAuthStore } from "./store/AuthStore";
+import { useAuthStore } from "../features/auth/store/AuthStore";
 
 const queryClient = new QueryClient({
   defaultOptions: {

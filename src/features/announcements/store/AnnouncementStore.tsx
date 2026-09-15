@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import type { Announcement } from "../types";
+import type { Announcement } from "../../../types";
 import { announcementService } from "../services/AnnouncementService";
 
 interface AnnouncementState {

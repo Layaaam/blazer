@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import blazerLogo from "../assets/images/blazer_logo_white.png";
+import blazerLogo from "../../../assets/images/blazer_logo_white.png";
 
 interface FormData {
   email: string;
