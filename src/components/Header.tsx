@@ -57,7 +57,7 @@ export default function Header() {
             className="-m-1.5 p-1.5"
           >
             <span className="sr-only">THE BLAZER</span>
-            <img alt="Blazer Logo" src={blazerLogo} className="h-15 w-auto" />
+            <img alt="Blazer Logo" src={blazerLogo} className="h-12 w-auto" />
           </button>
         </div>
         <div className="flex lg:hidden">
