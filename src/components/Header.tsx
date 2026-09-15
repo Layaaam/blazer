@@ -57,7 +57,7 @@ export default function Header() {
             className="-m-1.5 p-1.5"
           >
             <span className="sr-only">THE BLAZER</span>
-            <img alt="Blazer Logo" src={blazerLogo} className="h-20 w-auto" />
+            <img alt="Blazer Logo" src={blazerLogo} className="h-15 w-auto" />
           </button>
         </div>
         <div className="flex lg:hidden">
@@ -73,31 +73,31 @@ export default function Header() {
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <button
             onClick={() => scrollToSection("home")}
-            className="text-sm/6 font-poppins font-bold text-white text-[16px] tracking-[0.05em] hover:text-gray-300 transition-colors"
+            className="text-sm/6 font-poppins font-bold text-white text-xs tracking-[0.05em] hover:text-gray-300 transition-colors"
           >
             Home
           </button>
           <button
             onClick={() => scrollToSection("announcements")}
-            className="text-sm/6 font-poppins font-bold text-white text-[16px] tracking-[0.05em] hover:text-gray-300 transition-colors"
+            className="text-sm/6 font-poppins font-bold text-white text-xs tracking-[0.05em] hover:text-gray-300 transition-colors"
           >
             Announcements
           </button>
           <button
             onClick={() => scrollToSection("services")}
-            className="text-sm/6 font-poppins font-bold text-white text-[16px] tracking-[0.05em] hover:text-gray-300 transition-colors"
+            className="text-sm/6 font-poppins font-bold text-white text-xs tracking-[0.05em] hover:text-gray-300 transition-colors"
           >
             Services
           </button>
           <button
             onClick={() => scrollToSection("about")}
-            className="text-sm/6 font-poppins font-bold text-white text-[16px] tracking-[0.05em] hover:text-gray-300 transition-colors"
+            className="text-sm/6 font-poppins font-bold text-white text-xs tracking-[0.05em] hover:text-gray-300 transition-colors"
           >
             About Us
           </button>
           <button
             onClick={() => scrollToSection("contact")}
-            className="text-sm/6 font-poppins font-bold text-white text-[16px] tracking-[0.05em] hover:text-gray-300 transition-colors"
+            className="text-sm/6 font-poppins font-bold text-white text-xs tracking-[0.05em] hover:text-gray-300 transition-colors"
           >
             Contact
           </button>
@@ -137,7 +137,7 @@ export default function Header() {
           ) : (
             <button
               onClick={handleLoginClick}
-              className="text-sm/6 font-poppins font-bold tracking-[0.05em] text-white hover:text-gray-300 transition-colors"
+              className="text-xs font-poppins font-bold tracking-[0.05em] text-white hover:text-gray-300 transition-colors"
             >
               Log in <span aria-hidden="true">&rarr;</span>
             </button>
