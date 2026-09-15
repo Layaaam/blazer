@@ -122,10 +122,10 @@ const LoginPage: React.FC = () => {
 
       <button
         onClick={() => navigate("/")}
-        className="absolute top-6 left-6 flex items-center gap-2 text-white/90 hover:text-white transition-colors duration-200 font-poppins text-sm font-medium group"
+        className="absolute top-5 left-5 flex items-center gap-1.5 text-white/80 hover:text-white transition-colors duration-200 font-poppins text-xs font-medium group"
       >
         <svg
-          className="w-5 h-5 transition-transform duration-200 group-hover:-translate-x-1"
+          className="w-4 h-4 transition-transform duration-200 group-hover:-translate-x-1"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -140,43 +140,43 @@ const LoginPage: React.FC = () => {
         Back to Home
       </button>
 
-      <div className="max-w-md w-full space-y-8 relative z-10">
+      <div className="max-w-sm w-full space-y-6 relative z-10">
         <div className="text-center">
           <img
             src={blazerLogo}
             alt="The Blazer Logo"
-            className="mx-auto h-24 w-auto drop-shadow-lg"
+            className="mx-auto h-12 w-auto drop-shadow-lg"
           />
-          <h2 className="mt-6 text-3xl font-bold text-white font-libre-baskerville">
+          <h2 className="mt-4 text-xl font-bold text-white font-libre-baskerville">
             Welcome Back
           </h2>
-          <p className="mt-2 text-sm text-white/80 font-poppins">
+          <p className="mt-1 text-xs text-white/70 font-poppins">
             Sign in to your account
           </p>
         </div>
 
-        <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl p-8 border border-white/20">
-          <form onSubmit={handleSubmit} className="space-y-6">
+        <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-xl p-6 border border-white/20">
+          <form onSubmit={handleSubmit} className="space-y-4">
             {error && (
-              <div className="p-4 bg-red-50 border border-red-200 text-red-800 rounded-xl flex items-center gap-3">
+              <div className="p-3 bg-red-50 border border-red-200 text-red-800 rounded-lg flex items-center gap-2.5">
                 <svg
-                  className="w-5 h-5 flex-shrink-0"
+                  className="w-4 h-4 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v2h-2v-2zm0-10h2v8h-2V7z" />
                 </svg>
                 <div>
-                  <p className="font-semibold font-poppins">Login Failed</p>
-                  <p className="text-sm">{error}</p>
+                  <p className="text-xs font-semibold font-poppins">Login Failed</p>
+                  <p className="text-xs">{error}</p>
                 </div>
               </div>
             )}
 
-            <div className="space-y-2">
+            <div className="space-y-1">
               <label
                 htmlFor="email"
-                className="block text-gray-900 font-semibold text-sm font-poppins"
+                className="block text-gray-900 font-semibold text-xs font-poppins"
               >
                 Email Address <span className="text-red-500">*</span>
               </label>
@@ -188,17 +188,17 @@ const LoginPage: React.FC = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   onBlur={handleBlur}
-                  className={`w-full px-4 py-3 bg-gray-50 border-2 rounded-xl transition-all duration-200 font-poppins focus:outline-none ${
+                  className={`w-full px-3 py-2 text-sm bg-gray-50 border rounded-lg transition-all duration-200 font-poppins focus:outline-none ${
                     errors.email
                       ? "border-red-300 focus:border-red-500 focus:ring-red-100"
                       : "border-gray-200 focus:border-[#024334] focus:ring-[#024334]/10 focus:bg-white"
-                  } focus:ring-4`}
+                  } focus:ring-2`}
                   placeholder="your.email@cmu.edu.ph"
                 />
                 {errors.email && (
                   <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
                     <svg
-                      className="h-5 w-5 text-red-500"
+                      className="h-4 w-4 text-red-500"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
@@ -208,9 +208,9 @@ const LoginPage: React.FC = () => {
                 )}
               </div>
               {errors.email && (
-                <p className="text-red-600 text-sm font-poppins flex items-center gap-2">
+                <p className="text-red-600 text-xs font-poppins flex items-center gap-1.5">
                   <svg
-                    className="w-4 h-4 flex-shrink-0"
+                    className="w-3.5 h-3.5 flex-shrink-0"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -221,10 +221,10 @@ const LoginPage: React.FC = () => {
               )}
             </div>
 
-            <div className="space-y-2">
+            <div className="space-y-1">
               <label
                 htmlFor="password"
-                className="block text-gray-900 font-semibold text-sm font-poppins"
+                className="block text-gray-900 font-semibold text-xs font-poppins"
               >
                 Password <span className="text-red-500">*</span>
               </label>
@@ -236,17 +236,17 @@ const LoginPage: React.FC = () => {
                   value={formData.password}
                   onChange={handleInputChange}
                   onBlur={handleBlur}
-                  className={`w-full px-4 py-3 bg-gray-50 border-2 rounded-xl transition-all duration-200 font-poppins focus:outline-none ${
+                  className={`w-full px-3 py-2 text-sm bg-gray-50 border rounded-lg transition-all duration-200 font-poppins focus:outline-none ${
                     errors.password
                       ? "border-red-300 focus:border-red-500 focus:ring-red-100"
                       : "border-gray-200 focus:border-[#024334] focus:ring-[#024334]/10 focus:bg-white"
-                  } focus:ring-4`}
+                  } focus:ring-2`}
                   placeholder="Enter your password"
                 />
                 {errors.password && (
                   <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
                     <svg
-                      className="h-5 w-5 text-red-500"
+                      className="h-4 w-4 text-red-500"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
@@ -256,9 +256,9 @@ const LoginPage: React.FC = () => {
                 )}
               </div>
               {errors.password && (
-                <p className="text-red-600 text-sm font-poppins flex items-center gap-2">
+                <p className="text-red-600 text-xs font-poppins flex items-center gap-1.5">
                   <svg
-                    className="w-4 h-4 flex-shrink-0"
+                    className="w-3.5 h-3.5 flex-shrink-0"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -272,15 +272,15 @@ const LoginPage: React.FC = () => {
             <button
               type="submit"
               disabled={!isFormValid || isLoading}
-              className={`w-full px-6 py-3 rounded-xl font-bold text-sm tracking-[0.05em] transition-all duration-300 font-poppins focus:outline-none focus:ring-4 focus:ring-[#024334]/30 ${
+              className={`w-full px-5 py-2.5 rounded-lg font-bold text-xs tracking-[0.05em] transition-all duration-300 font-poppins focus:outline-none focus:ring-2 focus:ring-[#024334]/30 ${
                 isFormValid && !isLoading
-                  ? "bg-[#024334] hover:bg-[#08795F] text-white shadow-lg hover:shadow-xl transform hover:scale-[1.02]"
+                  ? "bg-[#024334] hover:bg-[#08795F] text-white shadow-md hover:shadow-lg transform hover:scale-[1.02]"
                   : "bg-gray-400 text-gray-600 cursor-not-allowed"
               }`}
             >
               {isLoading ? (
-                <span className="flex items-center justify-center gap-3">
-                  <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
+                <span className="flex items-center justify-center gap-2">
+                  <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24">
                     <circle
                       className="opacity-25"
                       cx="12"
@@ -304,15 +304,15 @@ const LoginPage: React.FC = () => {
             </button>
           </form>
 
-          <div className="mt-6 pt-6 border-t border-gray-200">
-            <p className="text-xs text-gray-500 text-center font-poppins mb-3">
+          <div className="mt-5 pt-4 border-t border-gray-200">
+            <p className="text-[11px] text-gray-500 text-center font-poppins mb-2">
               Demo Accounts:
             </p>
-            <div className="grid grid-cols-1 gap-2 text-xs font-poppins">
-              <div className="p-2 bg-gray-50 rounded text-center">
+            <div className="grid grid-cols-1 gap-1.5 text-[11px] font-poppins">
+              <div className="px-2 py-1.5 bg-gray-50 rounded text-center">
                 <strong>Admin:</strong> admin@gmail.com / admin123
               </div>
-              <div className="p-2 bg-gray-50 rounded text-center">
+              <div className="px-2 py-1.5 bg-gray-50 rounded text-center">
                 <strong>Engineering Editor:</strong> engineering@gmail.com /
                 engineering123
               </div>
