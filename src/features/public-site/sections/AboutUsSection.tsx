@@ -109,10 +109,20 @@ function AboutUsSection() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="group bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100">
               <h3 className="text-2xl font-bold text-[#024334] mb-4 font-libre-baskerville">
+                Goals and Objectives
+              </h3>
+              <p className="text-gray-600 font-poppins leading-relaxed">
+                The Blazer, as the official yearbook publication of Central Mindanao University, 
+                will provide aid to the senior students in terms of their yearbook and pictorial that serves as a commemoration of their journey in the institution.
+              </p>
+            </div>
+            <div className="group bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100">
+              <h3 className="text-2xl font-bold text-[#024334] mb-4 font-libre-baskerville">
                 Our Mission
               </h3>
               <p className="text-gray-600 font-poppins leading-relaxed">
-                Sorry Blazer!!
+                To produce, to serve, to listen to criticisms, to assist, to-accept general concerns and suggestions, and to ameliorate in the production of yearbooks 
+                and frames of the senior students that give honor and legacy to the name of Central Mindanao University in terms of creativity, craft, and character.
               </p>
             </div>
 
@@ -121,18 +131,11 @@ function AboutUsSection() {
                 Our Vision
               </h3>
               <p className="text-gray-600 font-poppins leading-relaxed">
-                Nakalimot ko huhuhuuh!!
+                A high service in terms of quality in the university yearbook publication that conforms to the production and development that contributes to the representation
+                of Central Mindanao University in the Philippines 
               </p>
             </div>
 
-            <div className="group bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100">
-              <h3 className="text-2xl font-bold text-[#024334] mb-4 font-libre-baskerville">
-                Our Values
-              </h3>
-              <p className="text-gray-600 font-poppins leading-relaxed">
-                Naa to sa Pre Orientation nakalimot kooo huhuhuu
-              </p>
-            </div>
           </div>
         </div>
       </div>
