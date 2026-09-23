@@ -303,20 +303,6 @@ const LoginPage: React.FC = () => {
               )}
             </button>
           </form>
-
-          <div className="mt-5 pt-4 border-t border-gray-200">
-            <p className="text-[11px] text-gray-500 text-center font-poppins mb-2">
-              Demo Accounts:
-            </p>
-            <div className="grid grid-cols-1 gap-1.5 text-[11px] font-poppins">
-              <div className="px-2 py-1.5 bg-gray-50 rounded text-center">
-                <strong>Admin:</strong> admin@gmail.com / admin123
-              </div>
-              <div className="px-2 py-1.5 bg-gray-50 rounded text-center">
-                <strong>Engineering Editor:</strong> engineering@gmail.com /
-                engineering123
-              </div>
-            </div>
           </div>
         </div>
       </div>
