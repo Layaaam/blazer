@@ -303,7 +303,6 @@ const LoginPage: React.FC = () => {
               )}
             </button>
           </form>
-          </div>
         </div>
       </div>
     </div>
